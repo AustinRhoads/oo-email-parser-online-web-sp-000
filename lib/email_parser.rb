@@ -6,7 +6,7 @@ class EmailAddressParser
 def initialize(csv)
 @csv = csv
 end
-REG = /((,)|\s)/
+REG = /((, )|\s|(,))/
 def parse
 
 @parsed = @csv.split(REG)
