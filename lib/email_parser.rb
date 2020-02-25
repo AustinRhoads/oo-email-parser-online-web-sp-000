@@ -9,7 +9,7 @@ end
 REG = /((, )|\s|(,))/
 def parse
 
-@parsed = @csv.gsub(REG, " ").split(" ")
+@parsed = @csv.gsub(REG, " ").split(" ").uniq
 
 end
 
